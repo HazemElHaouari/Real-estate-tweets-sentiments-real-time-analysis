@@ -29,4 +29,4 @@ To run this project:
 
 Then, the results will be available in localhost:9200/twitter/_search
 
-PS: The sentiments are calculated thanks to the function detectSentiment(message: String) done by Mr.Vincent Spiewak in his [repository] (https://github.com/vspiewak/twitter-sentiment-analysis/blob/master/src/main/scala/com/github/vspiewak/util/SentimentAnalysisUtils.scala)
+PS: The sentiments are calculated thanks to the function detectSentiment(message: String) done by Mr.Vincent Spiewak in his [repository](https://github.com/vspiewak/twitter-sentiment-analysis/blob/master/src/main/scala/com/github/vspiewak/util/SentimentAnalysisUtils.scala)
