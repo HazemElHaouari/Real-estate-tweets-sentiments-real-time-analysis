@@ -1,9 +1,11 @@
 # Real Estate Tweets Sentiments Real Time Analysis
 ### Logstash Kafka SparkStreaming
 
-This Project analysis, real estate's tweet sentiments in real time. It was realized using Logstash, Kafka, Spark streaming and Elasticsearch.
+This Project analysis real estate's tweet sentiments in real time. It was realized using Logstash, Kafka, Spark streaming and Elasticsearch.
 
-To install sbt: documentation available in https://www.scala-sbt.org/1.0/docs/Setup.html
+The main config description is about the folder `spark-streaming'
+
+To install sbt to execute Scala code use this documentation: https://www.scala-sbt.org/1.0/docs/Setup.html
 
 To run this project:
 ## Logstash
@@ -23,7 +25,7 @@ To run this project:
 
 ## Spark Streaming
 - Download spark-2.4.0-bin-hadoop2.7.tgz from https://spark.apache.org/downloads.html
-- Open the terminal in the directory where you downloaded this project
+- Open the terminal in the directory where you downloaded the folder `spark-streaming`
 - Run `sbt assembly`
 - Run `Path_Spark_Directory/spark-2.4.0-bin-hadoop2.7/bin/spark-submit --class "SimpleApp" --master local[4] target/scala-2.11/Simple-Project-assembly-1.0.jar`
 
