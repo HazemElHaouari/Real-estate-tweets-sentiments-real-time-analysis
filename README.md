@@ -1,3 +1,4 @@
+![Real Estate Tweets Sentiments Real Time Analysis](https://www.zupimages.net/up/18/48/xiy1.jpg)
 # Real Estate Tweets Sentiments Real Time Analysis
 ### Logstash Kafka SparkStreaming
 
