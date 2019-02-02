@@ -12,7 +12,33 @@ To run this project:
 ## Logstash
 - Download Logstash and Install it:  https://www.elastic.co/guide/en/logstash/current/getting-started-with-logstash.html
 - Add the file logstash-tweets.conf in the Logstash directory
-- Update Twitter with the correct information in the file logstash-tweets.conf
+- Update Twitter with the correct information in the file logstash-tweets.conf :
+```
+# Sample Logstash configuration for creating a simple
+# Beats -> Logstash -> Elasticsearch pipeline.
+# Config to get tweets and send it to kafka
+# twitter config is from twitter app
+input {
+  twitter {
+   	consumer_key => "******************"
+	consumer_secret => "*************************"
+	oauth_token => "***********************************"
+	oauth_token_secret => "*******************************"
+	keywords => ["realestate"]
+	full_tweet => true
+  }
+}
+
+output {
+	kafka {
+		codec => json
+        topic_id => "logstash"
+    } 
+    file {
+        path => "/home/hamed/Documents/tweets.txt"
+    }
+}
+```
 - Open Terminal in Logstash directory and run the command : `bin/logstash -f path_file_conf/logstash-tweets.conf`
 
 ## Kafka
